@@ -38,6 +38,7 @@
         GridPane.rowIndex="0"
         text="Blue"
         toggleGroup="$colorToggleGroup"
+        selected="true"
     />
     <RadioButton
         GridPane.columnIndex="4"
