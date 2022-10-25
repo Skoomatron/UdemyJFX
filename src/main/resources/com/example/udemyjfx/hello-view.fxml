@@ -47,4 +47,11 @@
         toggleGroup="$colorToggleGroup"
     />
 
+    <CheckBox
+        text="Subscribe"
+        GridPane.rowIndex="2"
+        GridPane.columnIndex="3"
+        indeterminate="true"
+    />
+
 </GridPane>
