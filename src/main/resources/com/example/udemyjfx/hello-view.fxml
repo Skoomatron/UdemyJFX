@@ -41,4 +41,13 @@
         onAction="#handleChecking"
     >
     </CheckBox>
+
+    <Label
+        fx:id="ourLabel"
+        text="Nothing is happening"
+        GridPane.rowIndex="3"
+        GridPane.columnIndex="0"
+    >
+
+    </Label>
 </GridPane>

@@ -1,9 +1,11 @@
 package com.example.udemyjfx;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class HelloController {
@@ -15,6 +17,8 @@ public class HelloController {
     private Button button2;
     @FXML
     private CheckBox boxToggle;
+    @FXML
+    private Label ourLabel;
 
     @FXML
     public void initialize() {
@@ -28,6 +32,25 @@ public class HelloController {
         } else if (e.getSource().equals(button2)) {
             System.out.println("Button2: " + mainField.getText());
         }
+        Runnable task = new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            ourLabel.setText("We did a thing");
+                        }
+                    });
+                } catch (InterruptedException event) {
+                    System.out.println("Error: " + event.getMessage());
+                }
+            }
+        };
+
+        new Thread(task).start();
+
         if (boxToggle.isSelected()) {
             mainField.clear();
             button1.setDisable(true);
