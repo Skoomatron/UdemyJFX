@@ -30,6 +30,8 @@ public class HelloController {
         }
         if (boxToggle.isSelected()) {
             mainField.clear();
+            button1.setDisable(true);
+            button2.setDisable(true);
         }
     }
 
