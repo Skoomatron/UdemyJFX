@@ -129,7 +129,32 @@
         GridPane.columnIndex="0"
         GridPane.rowIndex="6"
     >
-
     </DatePicker>
+
+    <Accordion
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="6"
+        expandedPane="$tp3"
+    >
+        <panes>
+            <TitledPane
+                text="Titled Pane 1"
+            >
+                <Label text="Here is some stuff."/>
+            </TitledPane>
+            <TitledPane
+                    text="Titled Pane 2"
+            >
+                <Label text="Here is some other stuff."/>
+            </TitledPane>
+            <TitledPane
+                    text="Titled Pane 3"
+                    fx:id="tp3"
+            >
+                <Label text="Here is some additional stuff."/>
+            </TitledPane>
+
+        </panes>
+    </Accordion>
 
 </GridPane>
