@@ -14,11 +14,19 @@
         GridPane.columnIndex="0"
         fx:id="mainField"
     >
-
     </TextField>
+
     <Button
+        fx:id="button1"
         text="Click Me"
         GridPane.columnIndex="0"
+        GridPane.rowIndex="1"
+        onAction="#onButtonClick"
+    />
+    <Button
+        fx:id="button2"
+        text="Click Me 2"
+        GridPane.columnIndex="1"
         GridPane.rowIndex="1"
         onAction="#onButtonClick"
     />
