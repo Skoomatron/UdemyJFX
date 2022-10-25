@@ -13,6 +13,7 @@
         GridPane.rowIndex="0"
         GridPane.columnIndex="0"
         fx:id="mainField"
+        onKeyReleased="#handleKeyReleased"
     >
     </TextField>
 
