@@ -11,11 +11,11 @@
     <Button
         text="Click Me"
         GridPane.columnIndex="0"
-        GridPane.rowIndex="0"
+        GridPane.rowIndex="1"
     />
 
     <Label
-        GridPane.rowIndex="0"
+        GridPane.rowIndex="1"
         GridPane.columnIndex="1"
         text="This is a lable."
         textFill="black"
@@ -29,20 +29,20 @@
     </fx:define>
     <RadioButton
         GridPane.columnIndex="2"
-        GridPane.rowIndex="0"
+        GridPane.rowIndex="2"
         text="Red"
         toggleGroup="$colorToggleGroup"
     />
     <RadioButton
         GridPane.columnIndex="3"
-        GridPane.rowIndex="0"
+        GridPane.rowIndex="2"
         text="Blue"
         toggleGroup="$colorToggleGroup"
         selected="true"
     />
     <RadioButton
         GridPane.columnIndex="4"
-        GridPane.rowIndex="0"
+        GridPane.rowIndex="2"
         text="Green"
         toggleGroup="$colorToggleGroup"
     />
@@ -60,7 +60,16 @@
         <CheckBox
             text="Join Mailing List"
         />
-
     </VBox>
+
+    <TextField
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0"
+    />
+
+    <PasswordField
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="3"
+    />
 
 </GridPane>
