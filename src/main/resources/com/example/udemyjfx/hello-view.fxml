@@ -2,19 +2,23 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
-<HBox
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Label?>
+<BorderPane
         fx:controller="com.example.udemyjfx.HelloController"
-        xmlns:fx="http://javafx.com/fxml"
-        alignment="BOTTOM_RIGHT"
-        spacing="10"
-        style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed">
-
-    <padding>
-        <Insets bottom="10" right="10"/>
-    </padding>
-
-    <Button text="Okay" prefWidth="90"/>
-    <Button text="Cancel" prefWidth="90"/>
-    <Button text="Help" prefWidth="90"/>
-
-</HBox>
+        xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="This is my button jawnt" BorderPane.alignment="CENTER"/>
+    </top>
+    <bottom>
+        <HBox
+            spacing="10"
+            alignment="CENTER"
+        >
+            <Button text="Okay" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+        </HBox>
+    </bottom>
+</BorderPane>
