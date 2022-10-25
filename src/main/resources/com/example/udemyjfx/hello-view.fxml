@@ -17,7 +17,7 @@
     />
 
     <Label
-        GridPane.rowIndex="1"
+        GridPane.rowIndex="0"
         GridPane.columnIndex="1"
         text="This is a lable."
         textFill="black"
@@ -29,29 +29,28 @@
     <fx:define>
         <ToggleGroup fx:id="colorToggleGroup"/>
     </fx:define>
-    <RadioButton
-        GridPane.columnIndex="2"
-        GridPane.rowIndex="2"
-        text="Red"
-        toggleGroup="$colorToggleGroup"
-    />
-    <RadioButton
-        GridPane.columnIndex="3"
-        GridPane.rowIndex="2"
-        text="Blue"
-        toggleGroup="$colorToggleGroup"
-        selected="true"
-    />
-    <RadioButton
-        GridPane.columnIndex="4"
-        GridPane.rowIndex="2"
-        text="Green"
-        toggleGroup="$colorToggleGroup"
-    />
-
     <VBox
         GridPane.columnIndex="0"
-        GridPane.rowIndex="4"
+        GridPane.rowIndex="2"
+    >
+        <RadioButton
+            text="Red"
+            toggleGroup="$colorToggleGroup"
+        />
+        <RadioButton
+            text="Blue"
+            toggleGroup="$colorToggleGroup"
+            selected="true"
+        />
+        <RadioButton
+            text="Green"
+            toggleGroup="$colorToggleGroup"
+        />
+    </VBox>
+
+    <VBox
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="2"
     >
         <CheckBox
             text="Subscribe"
@@ -76,7 +75,7 @@
 
     <ComboBox
         GridPane.columnIndex="0"
-        GridPane.rowIndex="5"
+        GridPane.rowIndex="4"
     >
         <items>
             <FXCollections fx:factory="observableArrayList">
@@ -88,7 +87,7 @@
     </ComboBox>
 
     <ChoiceBox
-        GridPane.rowIndex="5"
+        GridPane.rowIndex="4"
         GridPane.columnIndex="1"
     >
         <items>
@@ -99,5 +98,23 @@
             </FXCollections>
         </items>
     </ChoiceBox>
+
+    <Slider
+        GridPane.rowIndex="5"
+        GridPane.columnIndex="0"
+        GridPane.columnSpan="3"
+        showTickLabels="true"
+        showTickMarks="true"
+        minorTickCount="4"
+        snapToTicks="true"
+    >
+    </Slider>
+
+    <Spinner
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="6"
+    >
+
+    </Spinner>
 
 </GridPane>
