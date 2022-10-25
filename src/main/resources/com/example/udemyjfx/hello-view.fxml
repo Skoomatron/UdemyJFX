@@ -119,4 +119,17 @@
     >
     </Spinner>
 
+    <ColorPicker
+        GridPane.rowIndex="4"
+        GridPane.columnIndex="3"
+    >
+    </ColorPicker>
+
+    <DatePicker
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="6"
+    >
+
+    </DatePicker>
+
 </GridPane>
