@@ -3,8 +3,8 @@ package com.example.udemyjfx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
 
 public class HelloController {
     @FXML
@@ -13,6 +13,8 @@ public class HelloController {
     private Button button1;
     @FXML
     private Button button2;
+    @FXML
+    private CheckBox boxToggle;
 
     @FXML
     public void initialize() {
@@ -26,14 +28,20 @@ public class HelloController {
         } else if (e.getSource().equals(button2)) {
             System.out.println("Button2: " + mainField.getText());
         }
+        if (boxToggle.isSelected()) {
+            mainField.clear();
+        }
     }
 
     @FXML
-    public void handleKeyReleased(KeyEvent e) {
+    public void handleKeyReleased() {
         String text = mainField.getText();
         boolean disableButtons = text.isEmpty() || text.trim().isEmpty();
         button1.setDisable(disableButtons);
         button2.setDisable(disableButtons);
     }
-
+    @FXML
+    public void handleChecking() {
+        System.out.println("The checkbox is currently " + (boxToggle.isSelected() ? "checked" : "not checked"));
+    }
 }
