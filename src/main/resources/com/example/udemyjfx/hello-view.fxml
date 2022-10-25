@@ -111,10 +111,12 @@
     </Slider>
 
     <Spinner
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="6"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="1"
+        min="0"
+        max="10"
+        editable="true"
     >
-
     </Spinner>
 
 </GridPane>
